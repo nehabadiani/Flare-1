@@ -1,0 +1,1 @@
+export const API = "https://flare2022.herokuapp.com";

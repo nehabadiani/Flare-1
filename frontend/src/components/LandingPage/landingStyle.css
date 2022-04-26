@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* html,
+body {
+    height: 100%;
+    font-weight: 700;
+}
+
+body {
+    background: black;
+    font-family: Arial;
+} */
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.wrapper svg {
+    display: block;
+    font: 150px 'Montserrat';
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+    position: center;
+}
+
+    .text-copy:nth-child(1) {
+        stroke: #830505;
+        animation-delay: -1;
+    }
+    
+    .text-copy:nth-child(2) {
+    
+        stroke: #bd00b2c9;
+        animation-delay: -2s;
+    }
+    
+    .text-copy:nth-child(3) {
+        stroke: #dd0088;
+        animation-delay: -3s;
+    }
+    
+    .text-copy:nth-child(4) {
+    
+        stroke: #48347e;
+        animation-delay: -4s;
+    }
+    
+    .text-copy:nth-child(5) {
+    
+        stroke: #557ad9;
+        animation-delay: -5s;
+    }
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+
+
+
+/* . {
+    color: white;
+    content: attr(data-text);
+    margin-left: -1%;
+    margin-top: -1%;
+    position: absolute;
+} */
+
+@keyframes sliding-background {
+    0%,
+    100% {
+        background-position: 0 40%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+}
+
+@media (min-width: 769px) {
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        width: 60%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+
+
+
+.illustration {
+    position: relative;
+    margin-left: 900px;
+    margin-top: 10%;
+    height: 500px;
+    width: 500px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01rB9XoPFFHp0lH9mRNo9tfes7vUwFkB6jw&usqp=CAU');
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 725px) {
+    /* html,
+    body {
+        height: 100%;
+        font-weight: 700;
+        background-color: black;
+        z-index: -99;
+    }
+    body {
+        font-family: Arial;
+    } */
+    .wrapper {
+        /* width: 100%; */
+        min-height: 100vh ;
+       
+    }
+    .wrapper svg {
+        /* margin-top: 400px; */
+        display: block;
+        font: 5.5em 'Montserrat';
+        width: 100%;
+        padding-top: 320px;
+        /* height: 300px; */
+        margin-top: 25px;
+        margin: 0 auto;
+        z-index: 100;
+    }
+    #s-text {
+        display: flex;
+        justify-content: center !important;
+        font-size: 150px !important;
+        text-align: center !important;
+        align-items: center;
+    }
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 5px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+    .text-copy:nth-child(1) {
+        stroke: #830505;
+        animation-delay: -1;
+    }
+    .text-copy:nth-child(2) {
+    
+        stroke: #bd00b2c9;
+        animation-delay: -2s;
+    }
+    .text-copy:nth-child(3) {
+    stroke: #dd0088;
+      animation-delay: -3s;
+    }
+    .text-copy:nth-child(4) {
+
+      stroke: #48347e;
+        animation-delay: -4s;
+    }
+    .text-copy:nth-child(5) {
+
+        stroke: #557ad9;
+        animation-delay: -5s;
+    }
+}
